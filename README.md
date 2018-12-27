@@ -13,6 +13,7 @@ The template is designed to work in a team development environment. It supports
 deploying the application in different environments.
 
 Documentation of Yii framework is at [docs/guide/README.md](docs/guide/README.md).
+
 Clinox Documentation is under buildng "Operational software rather than exhaustive documentation" Agile Manifesto
 
 [![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
