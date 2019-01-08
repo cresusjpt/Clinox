@@ -7,8 +7,10 @@ use backend\models\Detailpayement;
 use Yii;
 use backend\models\Payement;
 use backend\models\PayementSearch;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf;
 use yii\filters\VerbFilter;
 
 /**
@@ -46,6 +48,34 @@ class PayementController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
             'totalCaisse' => $totalCaisse,
+        ]);
+    }
+
+    public function actionExportpdf(){
+
+        $searchModel = new PayementSearch();
+
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+
+        $searchModele = new \backend\models\DetailpayementSearch();
+        $detailPayementdataProvider = [new Detailpayement];
+        foreach ($dataProvider->query->all() as $i=>$onePayement){
+            $provider = $searchModele->searchByPayement($onePayement['idpayement'], Yii::$app->request->queryParams);
+            $detailPayementdataProvider[$i] = $provider->query->all();
+        }
+
+        /*var_dump($dataProvider->query->one());
+        die();*/
+        /*Yii::$app->html2pdf
+            ->render('payement/pdfexport', ['user' => Yii::$app->user->identity])
+            ->saveAs('@web/uploads/output.pdf');
+        $mdpf = new Mpdf();*/
+
+        return $this->render('pdfexport',[
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider->query->all(),
+            'detailPayementdataProvider' => $detailPayementdataProvider,
         ]);
     }
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e42aa445247a7c4883415efc6cd32d32",
+    "content-hash": "c0883fa40e1b81070adcc00bd09b4522",
     "packages": [
         {
             "name": "2amigos/yii2-date-picker-widget",
@@ -953,12 +953,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-export.git",
-                "reference": "334e7fe6f27fd4201da8f97f5d85f031b403a257"
+                "reference": "2499dacf71e356a725ce733dbcd62d1f2740dd04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-export/zipball/334e7fe6f27fd4201da8f97f5d85f031b403a257",
-                "reference": "334e7fe6f27fd4201da8f97f5d85f031b403a257",
+                "url": "https://api.github.com/repos/kartik-v/yii2-export/zipball/2499dacf71e356a725ce733dbcd62d1f2740dd04",
+                "reference": "2499dacf71e356a725ce733dbcd62d1f2740dd04",
                 "shasum": ""
             },
             "require": {
@@ -1005,7 +1005,7 @@
                 "xlsx",
                 "yii2"
             ],
-            "time": "2018-12-15T12:17:17+00:00"
+            "time": "2018-12-19T11:02:44+00:00"
         },
         {
             "name": "kartik-v/yii2-field-range",
@@ -2789,6 +2789,56 @@
                 "mailer"
             ],
             "time": "2018-07-31T09:26:32+00:00"
+        },
+        {
+            "name": "yii2tech/html2pdf",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2tech/html2pdf.git",
+                "reference": "ba1ca77617ccc1fe363ffd1a669ec8963845411b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2tech/html2pdf/zipball/ba1ca77617ccc1fe363ffd1a669ec8963845411b",
+                "reference": "ba1ca77617ccc1fe363ffd1a669ec8963845411b",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.13"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii2tech\\html2pdf\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "Provides support for HTML to PDF and PHP to PDF conversion",
+            "keywords": [
+                "conversion",
+                "convert",
+                "html2pdf",
+                "pdf",
+                "php2pdf",
+                "template",
+                "yii2"
+            ],
+            "time": "2018-09-18T12:17:31+00:00"
         },
         {
             "name": "yiisoft/yii2",

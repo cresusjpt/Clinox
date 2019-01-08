@@ -42,8 +42,6 @@ $baseUrl    = $asset->baseUrl;
     </div>
 </footer-->
 
-
-
 <?php $this->endBody() ?>
 </body>
 

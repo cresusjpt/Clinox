@@ -59,6 +59,16 @@ return [
             // this is the name of the session cookie used for login on the backend
             'name' => 'advanced-backend',
         ],
+        'html2pdf' => [
+            'class' => 'yii2tech\html2pdf\Manager',
+            'viewPath' => '@app/views',
+            'converter' => [
+                'class'=>'yii2tech\html2pdf\converters\Wkhtmltopdf',
+                'defaultOptions'=>[
+                    'pageSize'=>'A4',
+                ]
+            ],
+        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [

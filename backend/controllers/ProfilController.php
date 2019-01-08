@@ -83,11 +83,9 @@ class ProfilController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
 
-            $model->idprof  = $model->count()+1;
+            $model->idprof = $model->count() + 1;
 
-            if( $model->save())
-            {
-
+            if ($model->save()) {
                 return $this->redirect(['view', 'id' => $model->idprof]);
             }
 

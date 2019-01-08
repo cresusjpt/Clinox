@@ -87,6 +87,8 @@ $i = 1;
             <tr>
                 <th style="width: 40px">#</th>
                 <th width="60%">Désignation</th>
+                <!--<th>Quantite</th>
+                <th>Prix Unitaire</th>-->
                 <th>Montant</th>
             </tr>
 
@@ -97,6 +99,8 @@ $i = 1;
                     <td><?= $i ?></td>
                     <td>Analyse</td>
                     <td><?= $analyse ?> F CFA</td>
+                    <!--<td>1</td>
+                    <td></td>-->
                 </tr>
                 <?php
                 $i++;

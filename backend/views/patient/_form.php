@@ -14,11 +14,11 @@ use dosamigos\datepicker\DatePicker;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'nompatient')->textInput(['maxlength' => true,'autofocus' => 'autofocus']) ?>
+    <?= $form->field($model, 'nompatient')->textInput(['maxlength' => true, 'autofocus' => 'autofocus']) ?>
 
     <?= $form->field($model, 'prenompatient')->textInput(['maxlength' => true]) ?>
     <?= $form->field($model, 'idassurance')->widget(Select2::classname(), [
-        'data' => \yii\helpers\ArrayHelper::map(\backend\models\Assurance::find()->all(),'idassurance','libassurance'),
+        'data' => \yii\helpers\ArrayHelper::map(\backend\models\Assurance::find()->all(), 'idassurance', 'libassurance'),
         'language' => 'fr',
         'options' => ['placeholder' => 'Selectionner une assurance ...'],
         'pluginOptions' => [
@@ -27,9 +27,9 @@ use dosamigos\datepicker\DatePicker;
     ]); ?>
 
 
-    <?= $form->field($model, 'tauxassu')->input('number',['maxlength' => true]) ?>
+    <?= $form->field($model, 'tauxassu')->input('number', ['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'datenaisspatient')->input('date',['max'=>date('Y-m-d'),'onblur' => 'calculAge(this)'])->label(false); ?>
+    <?= $form->field($model, 'datenaisspatient')->input('date', ['max' => date('Y-m-d'), 'onblur' => 'calculAge(this)'])->label(false); ?>
 
 
     <div class="col-md-12 form-group">
@@ -41,35 +41,35 @@ use dosamigos\datepicker\DatePicker;
                 <input type="number" id="patient-agepatient" class="form-control input-sm"
                        name="Patient[age]" min="0" aria-invalid="false"
                        placeholder="<?= $model->attributeLabels()['age'] ?>" value="<?= $model->age ?>">
-                                    <span class="input-group-btn">
+                <span class="input-group-btn">
                                       <button type="button" class="btn btn-default btn-flat">ans</button>
                                     </span>
             </div>
         </div>
     </div>
 
-    <?= $form->field($model, 'sexpatient')->radioList(['M' => 'Masculin', 'F' => 'Féminin'], ['inline'=>false])?>
+    <?= $form->field($model, 'sexpatient')->radioList(['M' => 'Masculin', 'F' => 'Féminin'], ['inline' => false]) ?>
 
-    <?= $form->field($model, 'tel1patient')->input('number',['maxlength' => true]) ?>
+    <?= $form->field($model, 'tel1patient')->input('number', ['maxlength' => true]) ?>
 
 
 
     <?= $form->field($model, 'proffesionpatient')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'statutmatripatient')->radioList(['Célibataire' => 'Célibataire','Célibataire avec enfants' => 'Célibataire avec enfants', 'Marié' => 'Marié', 'Marié avec enfants' => 'Marié avec enfants'], ['inline'=>false])?>
+    <?= $form->field($model, 'statutmatripatient')->radioList(['Célibataire' => 'Célibataire', 'Célibataire avec enfants' => 'Célibataire avec enfants', 'Marié' => 'Marié', 'Marié avec enfants' => 'Marié avec enfants'], ['inline' => false]) ?>
 
     <!--?= $form->field($model, 'gsphpatient')->textInput(['maxlength' => true]) ?-->
     <?php
-    $a= ['O+' => '0+', '0-' => '0-','A+' => 'A+', 'A-' => 'A-','B+' => 'B+', 'B-' => 'B-','AB+' => 'AB+', 'AB-' => 'AB-'];
-    echo $form->field($model, 'gsphpatient')->dropDownList($a,['prompt'=>'Selectionnez un rhésus']);
+    $a = ['O+' => '0+', '0-' => '0-', 'A+' => 'A+', 'A-' => 'A-', 'B+' => 'B+', 'B-' => 'B-', 'AB+' => 'AB+', 'AB-' => 'AB-'];
+    echo $form->field($model, 'gsphpatient')->dropDownList($a, ['prompt' => 'Selectionnez un rhésus']);
     ?>
 
     <?= $form->field($model, 'personneaprevenir')->textInput(['maxlength' => true]) ?>
-    <?= $form->field($model, 'tel2patient')->input('number',['maxlength' => true]) ?>
+    <?= $form->field($model, 'tel2patient')->input('number', ['maxlength' => true]) ?>
 
 
     <!--?= $form->field($model, 'tauxassu')->input('number',['maxlength' => true]) ?-->
-	
+
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Ajouter' : 'Sauvegarder', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

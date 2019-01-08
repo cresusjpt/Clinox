@@ -33,7 +33,7 @@
     "kartik-v/yii2-field-range": "dev-master",
     "jino5577/yii2-date-range-picker": "*",
     "kartik-v/yii2-grid": "@dev",
-    "kartik-v/yii2-export": "@dev"
+    "yii2tech/html2pdf": "^1.0"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "~2.0.0",

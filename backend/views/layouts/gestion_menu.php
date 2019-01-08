@@ -1,17 +1,15 @@
 <?php
 if (!Yii::$app->user->isGuest) {
 
-    $profiluser=Yii::$app->session['profil'];
-    $profil=new \backend\models\Profil();
-
+    $profiluser = Yii::$app->session['profil'];
+    $profil = new \backend\models\Profil();
 
 //**********************************************  Begin menu gestion patients  ****************************************************************************************
 
-
     $menugespat = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gespat = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gespat = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugespat[] = $ligne['idprof'];
     }
@@ -19,15 +17,13 @@ if (!Yii::$app->user->isGuest) {
 
     $menu['admenugespat'] = $admenugespat;
 
-
 //**********************************************  End menu gestion patients  ****************************************************************************************
 //**********************************************  Begin menu create patient  ****************************************************************************************
 
-
     $menucreatepat = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createpat = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createpat = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreatepat[] = $ligne['idprof'];
     }
@@ -35,16 +31,13 @@ if (!Yii::$app->user->isGuest) {
 
     $menu['admenucreatepat'] = $admenucreatepat;
 
-
-
 //**********************************************  End menu create patient  ****************************************************************************************
 //**********************************************  Begin menu create param patient  ****************************************************************************************
 
-
     $menucreateparampat = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createparampat = 1  ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createparampat = 1  ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreateparampat[] = $ligne['idprof'];
     }
@@ -52,15 +45,13 @@ if (!Yii::$app->user->isGuest) {
 
     $menu['admenucreateparampat'] = $admenucreateparampat;
 
-
 //**********************************************  End menu create param patient  ****************************************************************************************
 //**********************************************  Begin menu read patient  ****************************************************************************************
 
-
     $menureadpat = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readpat = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readpat = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureadpat[] = $ligne['idprof'];
     }
@@ -68,15 +59,14 @@ if (!Yii::$app->user->isGuest) {
 
     $menu['admenureadpat'] = $admenureadpat;
 
-
 //**********************************************  End menu read patient  ****************************************************************************************
 //**********************************************  Begin menu update patient  ****************************************************************************************
 
 
     $menuupdatepat = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where updatepat = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updatepat = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuupdatepat[] = $ligne['idprof'];
     }
@@ -91,8 +81,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menudeletepat = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where deletepat = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deletepat = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menudeletepat[] = $ligne['idprof'];
     }
@@ -107,8 +97,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menugescons = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gescons = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gescons = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugescons[] = $ligne['idprof'];
     }
@@ -123,8 +113,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreatecons = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createcons = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createcons = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreatecons[] = $ligne['idprof'];
     }
@@ -139,8 +129,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuupdatecons = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where updatecons = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updatecons = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuupdatecons[] = $ligne['idprof'];
     }
@@ -155,8 +145,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureadcons = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readcons = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readcons = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureadcons[] = $ligne['idprof'];
     }
@@ -171,8 +161,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuprintcons = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where printcons = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where printcons = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuprintcons[] = $ligne['idprof'];
     }
@@ -187,8 +177,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menudeletecons = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where deletecons = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deletecons = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menudeletecons[] = $ligne['idprof'];
     }
@@ -203,8 +193,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menugeshos = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where geshos = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where geshos = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugeshos[] = $ligne['idprof'];
     }
@@ -219,8 +209,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreatehos = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createhos = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createhos = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreatehos[] = $ligne['idprof'];
     }
@@ -235,8 +225,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuupdatehos = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where updatehos = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updatehos = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuupdatehos[] = $ligne['idprof'];
     }
@@ -251,8 +241,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureadhos = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readhos = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readhos = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureadhos[] = $ligne['idprof'];
     }
@@ -267,8 +257,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menudeletehos = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where deletehos = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deletehos = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menudeletehos[] = $ligne['idprof'];
     }
@@ -283,8 +273,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuprinthos = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where printhos = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where printhos = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuprinthos[] = $ligne['idprof'];
     }
@@ -299,8 +289,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menugessoin = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gessoin = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gessoin = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugessoin[] = $ligne['idprof'];
     }
@@ -315,8 +305,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreatesoin = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createsoin = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createsoin = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreatesoin[] = $ligne['idprof'];
     }
@@ -331,8 +321,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuupdatesoin = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where updatesoin = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updatesoin = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuupdatesoin[] = $ligne['idprof'];
     }
@@ -347,8 +337,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureadsoin = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readsoin = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readsoin = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureadsoin[] = $ligne['idprof'];
     }
@@ -363,8 +353,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menudeletesoin = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where deletesoin = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deletesoin = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menudeletesoin[] = $ligne['idprof'];
     }
@@ -379,8 +369,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuprintsoin = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where printsoin = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where printsoin = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuprintsoin[] = $ligne['idprof'];
     }
@@ -395,8 +385,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menugesord = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gesord = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gesord = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugesord[] = $ligne['idprof'];
     }
@@ -411,8 +401,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreateord = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createord = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createord = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreateord[] = $ligne['idprof'];
     }
@@ -427,8 +417,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuupdateord = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where updateord = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updateord = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuupdateord[] = $ligne['idprof'];
     }
@@ -443,8 +433,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureadord = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readord = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readord = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureadord[] = $ligne['idprof'];
     }
@@ -459,8 +449,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuprintord = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where printord = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where printord = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuprintord[] = $ligne['idprof'];
     }
@@ -475,8 +465,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menugesexamed = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gesexamed = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gesexamed = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugesexamed[] = $ligne['idprof'];
     }
@@ -491,8 +481,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreateexamed = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createexamed = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createexamed = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreateexamed[] = $ligne['idprof'];
     }
@@ -507,8 +497,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuupdateexamed = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where updateexamed = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updateexamed = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuupdateexamed[] = $ligne['idprof'];
     }
@@ -523,8 +513,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureadexamed = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readexamed = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readexamed = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureadexamed[] = $ligne['idprof'];
     }
@@ -539,8 +529,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menudeleteexamed = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where deleteexamed = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deleteexamed = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menudeleteexamed[] = $ligne['idprof'];
     }
@@ -555,8 +545,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menugesana = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gesana = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gesana = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugesana[] = $ligne['idprof'];
     }
@@ -571,8 +561,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreateana = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createana = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createana = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreateana[] = $ligne['idprof'];
     }
@@ -583,8 +573,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreatedemande = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createdemandanal = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createdemandanal = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreatedemande[] = $ligne['idprof'];
     }
@@ -595,8 +585,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreateprelev = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createprelev = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createprelev = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreateprelev[] = $ligne['idprof'];
     }
@@ -611,8 +601,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuupdateana = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where updateana = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updateana = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuupdateana[] = $ligne['idprof'];
     }
@@ -623,8 +613,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuupdatedemandanal = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where updatedemandanal = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updatedemandanal = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuupdatedemandanal[] = $ligne['idprof'];
     }
@@ -635,8 +625,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuupdateprelev = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where updateprelev = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updateprelev = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuupdateprelev[] = $ligne['idprof'];
     }
@@ -650,8 +640,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureadana = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readana = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readana = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureadana[] = $ligne['idprof'];
     }
@@ -662,8 +652,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureaddemandanal = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readdemandanal = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readdemandanal = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureaddemandanal[] = $ligne['idprof'];
     }
@@ -674,8 +664,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureadprelev = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readprelev = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readprelev = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureadprelev[] = $ligne['idprof'];
     }
@@ -690,8 +680,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menudeleteana = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where deleteana = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deleteana = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menudeleteana[] = $ligne['idprof'];
     }
@@ -702,8 +692,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menudeletedemandanal = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where deletedemandanal = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deletedemandanal = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menudeletedemandanal[] = $ligne['idprof'];
     }
@@ -714,8 +704,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menudeletedemandanal = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where deletedemandanal = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deletedemandanal = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menudeletedemandanal[] = $ligne['idprof'];
     }
@@ -730,8 +720,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuprintana = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where printana = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where printana = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuprintana[] = $ligne['idprof'];
     }
@@ -742,8 +732,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuprintdemandanal = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where printdemandanal = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where printdemandanal = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuprintdemandanal[] = $ligne['idprof'];
     }
@@ -754,8 +744,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuprintprelev = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where printprelev = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where printprelev = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuprintprelev[] = $ligne['idprof'];
     }
@@ -764,15 +754,14 @@ if (!Yii::$app->user->isGuest) {
     $menu['admenuprintprelev'] = $admenuprintprelev;
 
 
-
 //**********************************************  End menu print analyses  ****************************************************************************************
 //**********************************************  Begin menu gestion user  ****************************************************************************************
 
 
     $menugesuser = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gesuser = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gesuser = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugesuser[] = $ligne['idprof'];
     }
@@ -787,8 +776,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreateuser = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createuser = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createuser = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreateuser[] = $ligne['idprof'];
     }
@@ -803,8 +792,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureaduser = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readuser = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readuser = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureaduser[] = $ligne['idprof'];
     }
@@ -819,8 +808,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuupdateuser = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where updateuser = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updateuser = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuupdateuser[] = $ligne['idprof'];
     }
@@ -835,8 +824,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menudeleteuser = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where deleteuser = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deleteuser = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menudeleteuser[] = $ligne['idprof'];
     }
@@ -851,8 +840,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menugespharma = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gespharma = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gespharma = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugespharma[] = $ligne['idprof'];
     }
@@ -867,8 +856,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreateachaprod = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createachaprod = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createachaprod = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreateachaprod[] = $ligne['idprof'];
     }
@@ -883,8 +872,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureadachaprod = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readachaprod = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readachaprod = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureadachaprod[] = $ligne['idprof'];
     }
@@ -899,8 +888,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menugescaisse = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gescaisse = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gescaisse = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugescaisse[] = $ligne['idprof'];
     }
@@ -915,8 +904,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreatepaye = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createpaye = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createpaye = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreatepaye[] = $ligne['idprof'];
     }
@@ -931,8 +920,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureadpaye = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readpaye = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readpaye = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureadpaye[] = $ligne['idprof'];
     }
@@ -947,8 +936,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menuupdatepaye = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where updatepaye = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updatepaye = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menuupdatepaye[] = $ligne['idprof'];
     }
@@ -963,8 +952,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menudeletepaye = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where deletepaye = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deletepaye = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menudeletepaye[] = $ligne['idprof'];
     }
@@ -974,13 +963,152 @@ if (!Yii::$app->user->isGuest) {
 
 
 //**********************************************  End menu delete payement  ****************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //**********************************************  Begin menu create decaissement  ****************************************************************************************
+
+
+    $menucreatedecaiss = array();
+
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createdecaiss = 1 ");
+    $list = $sql->query();
+    foreach ($list as $ligne) {
+        $menucreatedecaiss[] = $ligne['idprof'];
+    }
+    $admenucreatedecaiss = in_array($profiluser, $menucreatedecaiss);
+
+    $menu['admenucreatedecaiss'] = $admenucreatedecaiss;
+
+
+//**********************************************  End menu create decaissement  ****************************************************************************************
+//**********************************************  Begin menu read decaissement  ****************************************************************************************
+
+
+    $menureaddecaiss = array();
+
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readdecaiss = 1 ");
+    $list = $sql->query();
+    foreach ($list as $ligne) {
+        $menureaddecaiss[] = $ligne['idprof'];
+    }
+    $admenureaddecaiss = in_array($profiluser, $menureaddecaiss);
+
+    $menu['admenureaddecaiss'] = $admenureaddecaiss;
+
+
+//**********************************************  End menu read decaissement  ****************************************************************************************
+//**********************************************  Begin menu update decaissement  ****************************************************************************************
+
+
+    $menuupdatedecaiss = array();
+
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updatedecaiss = 1 ");
+    $list = $sql->query();
+    foreach ($list as $ligne) {
+        $menuupdatedecaiss[] = $ligne['idprof'];
+    }
+    $admenuupdatedecaiss = in_array($profiluser, $menuupdatedecaiss);
+
+    $menu['admenuupdatedecaiss'] = $admenuupdatedecaiss;
+
+
+//**********************************************  End menu update decaissement  ****************************************************************************************
+//**********************************************  Begin menu delete decaissement  ****************************************************************************************
+
+
+    $menudeletedecaiss = array();
+
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deletedecaiss = 1 ");
+    $list = $sql->query();
+    foreach ($list as $ligne) {
+        $menudeletedecaiss[] = $ligne['idprof'];
+    }
+    $admenudeletedecaiss = in_array($profiluser, $menudeletedecaiss);
+
+    $menu['admenudeletedecaiss'] = $admenudeletedecaiss;
+
+
+//**********************************************  End menu delete decaissement  ****************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //**********************************************  Begin menu Gestion profil  ****************************************************************************************
 
 
     $menugesprofil = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gesprofil = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gesprofil = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugesprofil[] = $ligne['idprof'];
     }
@@ -995,8 +1123,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menucreateprof = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where createprof = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createprof = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menucreateprof[] = $ligne['idprof'];
     }
@@ -1011,8 +1139,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menureadprof = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where readprof = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readprof = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menureadprof[] = $ligne['idprof'];
     }
@@ -1027,8 +1155,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menugesstat = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gesstat = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gesstat = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugesstat[] = $ligne['idprof'];
     }
@@ -1045,8 +1173,8 @@ if (!Yii::$app->user->isGuest) {
 
     $menugesparam = array();
 
-    $sql=Yii::$app->db->createCommand("select idprof from profil where gesparam = 1 ");
-    $list=$sql->query();
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gesparam = 1 ");
+    $list = $sql->query();
     foreach ($list as $ligne) {
         $menugesparam[] = $ligne['idprof'];
     }
@@ -1058,16 +1186,14 @@ if (!Yii::$app->user->isGuest) {
 //**********************************************  End menu Gestion des parametres  ****************************************************************************************
 
 
-
-
     return $admenugespat;
     var_dump($menu);
 //    var_dump(yii::$app->session['profil']);
 //    var_dump($menugespat);
     die;
-}else {
+} else {
 
     //Yii::$app->getResponse()->redirect( Yii::$app->getHomeUrl(). '?r=site%2Flogin');
 //die;
 }
-  ?>
+?>

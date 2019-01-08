@@ -23,7 +23,7 @@ use dosamigos\datepicker\DatePicker;
     ]); ?>
 
     <?= $form->field($hospitaliser, 'idchbre')->widget(\kartik\widgets\Select2::classname(), [
-        'data' => \yii\helpers\ArrayHelper::map(\backend\models\Chambre::find()->all(), 'idchbre', 'nomchbre','idcategoriechbr0.libcategoriechbr'),
+        'data' => \yii\helpers\ArrayHelper::map(\backend\models\Chambre::find()->all(), 'idchbre', 'nomchbre', 'idcategoriechbr0.libcategoriechbr'),
         'language' => 'fr',
         'options' => ['placeholder' => 'Selectionner la chambre ...'],
         'pluginOptions' => [
@@ -72,18 +72,18 @@ use dosamigos\datepicker\DatePicker;
             $('#hospitaliser-echeance').parent().parent().fadeOut(450);
         }
         else {
-
             $('#hospitaliser-autorisation').parent().fadeIn(450);
             $('#hospitaliser-echeance').parent().parent().fadeIn(450);
         }
     }
+
     function isautoriser(elmt) {
-        if (elmt.checked){
+        if (elmt.checked) {
             $('#hospitaliser-indigeant').parent().fadeOut(450);
-            $('#hospitaliser-echeance').attr('required','required');
+            $('#hospitaliser-echeance').attr('required', 'required');
         }
-        else{
-            $('#hospitaliser-echeance').removeAttr('required','required');
+        else {
+            $('#hospitaliser-echeance').removeAttr('required', 'required');
             $('#hospitaliser-indigeant').parent().fadeIn(450);
         }
     }

@@ -38,7 +38,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     'searchModel' => $searchModele,
                     'dataProvider' => $dataProvider,
                 ]);
-            }
+            },
+            'hiddenFromExport' => false,
+            'detailRowCssClass' => 'grid-expanded-row-details',
         ],
         ['class' => 'yii\grid\SerialColumn'],
 
@@ -87,10 +89,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p><?= Html::a('Enrégistrer un payement', ['chosepatient'], ['class' => 'btn btn-success']) ?></p>
 
-    <?= ExportMenu::widget([
-        'dataProvider' => $dataProvider,
-        'columns' => $gridColumns,
-    ]) ?>
+    <div>
+        <?= ExportMenu::widget([
+            'dataProvider' => $dataProvider,
+            'columns' => $gridColumns,
+        ]) ?>
+
+        <?= Html::a('Exporter en pdf', ['payement/exportpdf'], ['class' => 'btn btn-primary']) ?>
+    </div>
 
     <?= GridView::widget([
         'export' => [
