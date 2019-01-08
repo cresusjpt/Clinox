@@ -803,10 +803,7 @@ $listeRecapitulatif2 = null;
 
                 <!--***********************************************  End Block Récapitulatif  ***************************************************************-->
 
-
-
                 <?= $form->field($model, 'montantrecu')->input('number',['maxlength' => true,'min' => $totalGénérale,'onKeyUp' => 'calculMonnaie(this)']) ?>
-
 
                 <div class="form-group">
                     <label class="control-label" ">Montant à payer</label>

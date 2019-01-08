@@ -2,6 +2,7 @@
 
 namespace backend\models;
 
+use app\models\Decaissement;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
@@ -48,6 +49,10 @@ class PayementSearch extends Payement
 
         $query = Payement::find()->sum('montantrecu');
 
+        $query2 = Decaissement::find()->sum('montant');
+
+        $query3 = $query-$query2;
+
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             /* 'sort'=>[
@@ -57,7 +62,8 @@ class PayementSearch extends Payement
 
         $this->load($params);
 
-        return $dataProvider->query;
+        $dataProvider->query;
+        return $query3;
     }
 
     /**
