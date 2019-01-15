@@ -79,6 +79,8 @@ class PayementSearch extends Payement
         // JOINTURE
         $query = Payement::find()->joinWith(['idpatient0', 'idpatient0.idassurance0']);
 
+        $query->orderBy('datepayement DESC');
+
 
         // add conditions that should always apply here
 

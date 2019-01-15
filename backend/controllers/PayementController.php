@@ -44,6 +44,7 @@ class PayementController extends Controller
 
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+        //pour les detail de payement
         $searchModele = new \backend\models\DetailpayementSearch();
         $detailPayementdataProvider = [new Detailpayement];
         foreach ($dataProvider->query->all() as $i => $onePayement) {
