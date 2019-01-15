@@ -94,25 +94,28 @@ class DecaissementController extends Controller
         $model = new Decaissement();
 
         if ($model->load(Yii::$app->request->post())) {
-            $model->reference_decaiss = "REFERENCE ".(Decaissement::find()->count()+1);
+            $model->reference_decaiss = "REFERENCE " . (Decaissement::find()->count() + 1);
             $ressourceFile = UploadedFile::getInstance($model, 'ressource');
 
-            $directory =  Url::home()."/"."uploads/decaissement_ressource/";
+            $directory = Url::home() . "/" . "uploads/decaissement_ressource/";
             if (!is_dir($directory)) {
                 FileHelper::createDirectory($directory);
             }
             if ($ressourceFile) {
                 $time = time() + 1;
-                $fileName = str_replace(' ', '_', $model->date_decaiss.$model->reference_decaiss.$model->montant) . $time . '.' . $ressourceFile->extension;
+                $fileName = str_replace(' ', '_', $model->date_decaiss . $model->reference_decaiss . $model->montant) . $time . '.' . $ressourceFile->extension;
                 $filePath = $directory . $fileName;
                 if ($ressourceFile->saveAs($filePath)) {
                     $model->ressource = $filePath;
                 }
-            }else{
+            } else {
                 $model->ressource = "NON";
             }
-            $model->save();
-            return $this->redirect(['view', 'id' => $model->id_decaiss]);
+
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id_decaiss]);
+            }
+
         }
 
         return $this->render('create', [
@@ -141,15 +144,17 @@ class DecaissementController extends Controller
             }
             if ($ressourceFile) {
                 $time = time() + 1;
-                $fileName = str_replace(' ', '_', $model->date_decaiss.$model->reference_decaiss.$model->montant) . $time . '.' . $ressourceFile->extension;
+                $fileName = str_replace(' ', '_', $model->date_decaiss . $model->reference_decaiss . $model->montant) . $time . '.' . $ressourceFile->extension;
                 $filePath = $directory . $fileName;
                 if ($ressourceFile->saveAs($filePath)) {
                     $model->ressource = $filePath;
                 }
             }
 
-            $model->save();
-            return $this->redirect(['view', 'id' => $model->id_decaiss]);
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id_decaiss]);
+            }
+
         }
 
         return $this->render('update', [

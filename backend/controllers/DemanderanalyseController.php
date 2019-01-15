@@ -117,7 +117,7 @@ class DemanderanalyseController extends Controller
                         ->one();
 
                     $detaildemanderana->idpatient= $model->idpatient;
-                    $detaildemanderana->tauxreduction = $infopatient->tauxassu;
+                    $detaildemanderana->tauxreduction = $infopatient['tauxassu'];
 
                     $detaildemanderana->coutanalyse = $infoanalyse->coutanalyse;
                     $detaildemanderana->fraispatient = $infoanalyse->coutanalyse - ($infoanalyse->coutanalyse * $detaildemanderana->tauxreduction / 100);

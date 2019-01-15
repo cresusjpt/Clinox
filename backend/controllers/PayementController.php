@@ -44,14 +44,23 @@ class PayementController extends Controller
 
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+        $searchModele = new \backend\models\DetailpayementSearch();
+        $detailPayementdataProvider = [new Detailpayement];
+        foreach ($dataProvider->query->all() as $i => $onePayement) {
+            $provider = $searchModele->searchByPayement($onePayement['idpayement'], Yii::$app->request->queryParams);
+            $detailPayementdataProvider[$i] = $provider->query->all();
+        }
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
             'totalCaisse' => $totalCaisse,
+            'detailPayementdataProvider' => $detailPayementdataProvider,
         ]);
     }
 
-    public function actionExportpdf(){
+    public function actionExportpdf()
+    {
 
         $searchModel = new PayementSearch();
 
@@ -60,19 +69,12 @@ class PayementController extends Controller
 
         $searchModele = new \backend\models\DetailpayementSearch();
         $detailPayementdataProvider = [new Detailpayement];
-        foreach ($dataProvider->query->all() as $i=>$onePayement){
+        foreach ($dataProvider->query->all() as $i => $onePayement) {
             $provider = $searchModele->searchByPayement($onePayement['idpayement'], Yii::$app->request->queryParams);
             $detailPayementdataProvider[$i] = $provider->query->all();
         }
 
-        /*var_dump($dataProvider->query->one());
-        die();*/
-        /*Yii::$app->html2pdf
-            ->render('payement/pdfexport', ['user' => Yii::$app->user->identity])
-            ->saveAs('@web/uploads/output.pdf');
-        $mdpf = new Mpdf();*/
-
-        return $this->render('pdfexport',[
+        return $this->render('pdfexport', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider->query->all(),
             'detailPayementdataProvider' => $detailPayementdataProvider,

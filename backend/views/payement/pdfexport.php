@@ -76,7 +76,6 @@
     </div>
     <!-- end: BASIC TABLE PANEL -->
 </div>
-</div>
 <?php
 $script = <<< JS
 jQuery(document).ready(function () {

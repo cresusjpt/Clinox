@@ -16,7 +16,7 @@ class PdfExportAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
-        'js/main.js',
+        'dist/jspdf.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
