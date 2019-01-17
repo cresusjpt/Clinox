@@ -41,6 +41,7 @@ class DecaissementController extends Controller
     public function actionIndex()
     {
         $searchModel = new DecaissementSearch();
+        $totalDecaissement = $searchModel->getTotalSortie(Yii::$app->request->queryParams);
 
         $search = new PayementSearch();
         $totalCaisse = $search->getTotalCaisse(Yii::$app->request->queryParams);
@@ -51,6 +52,7 @@ class DecaissementController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
             'totalCaisse' => $totalCaisse,
+            'totalDecaissement' => $totalDecaissement,
         ]);
     }
 

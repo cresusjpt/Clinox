@@ -44,6 +44,18 @@ class PayementSearch extends Payement
         return array_merge(parent::attributes(), ['idpatient0.fullName'], ['idpatient0.idassurance0.sigleassurance']);
     }
 
+    public function getTotalEntree($params){
+        $query = Payement::find()->sum('montantrecu');
+
+        $dataProvider = new ActiveDataProvider([
+           'query' => $query,
+        ]);
+
+        $this->load($params);
+
+        return $dataProvider->query;
+    }
+
     public function getTotalCaisse($params)
     {
 

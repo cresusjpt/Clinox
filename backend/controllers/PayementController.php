@@ -41,6 +41,7 @@ class PayementController extends Controller
     {
         $searchModel = new PayementSearch();
         $totalCaisse = $searchModel->getTotalCaisse(Yii::$app->request->queryParams);
+        $totalEntree = $searchModel->getTotalEntree(Yii::$app->request->queryParams);
 
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -56,6 +57,7 @@ class PayementController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
             'totalCaisse' => $totalCaisse,
+            'totalEntree' => $totalEntree,
             'detailPayementdataProvider' => $detailPayementdataProvider,
         ]);
     }
