@@ -1,0 +1,4 @@
+montant variable selon la prestation
+gérer décaissement par période (impression)
+afficher les détails pour le decaissement
+Situation du decaissement par jour.

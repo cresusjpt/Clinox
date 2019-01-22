@@ -58525,3 +58525,1400 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1547720817.788
     'REQUEST_TIME' => 1547720817
 ]
+2019-01-17 11:28:03 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 11:29:02 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\yiisoft\yii2\web\Request.php:494
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-01-17 11:28:02 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][info][application] $_GET = [
+    'DecaissementSearch' => [
+        'date_decaiss_range' => ''
+        'montant' => ''
+        'motif_decaiss' => ''
+    ]
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '54hnq5anncelur9v79l9b0nbq7'
+    '_csrf-backend' => '9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '223'
+    'HTTP_COOKIE' => 'advanced-backend=54hnq5anncelur9v79l9b0nbq7; _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D'
+    'HTTP_RANGE' => 'bytes=0-'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '11768'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547720882.831
+    'REQUEST_TIME' => 1547720882
+]
+2019-01-17 11:29:08 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 11:30:07 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\yiisoft\yii2\web\Request.php:494
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-01-17 11:29:07 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][info][application] $_GET = [
+    'DecaissementSearch' => [
+        'date_decaiss_range' => ''
+        'montant' => ''
+        'motif_decaiss' => ''
+    ]
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '54hnq5anncelur9v79l9b0nbq7'
+    '_csrf-backend' => '9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '223'
+    'HTTP_COOKIE' => 'advanced-backend=54hnq5anncelur9v79l9b0nbq7; _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D'
+    'HTTP_RANGE' => 'bytes=0-'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '11773'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547720947.858
+    'REQUEST_TIME' => 1547720947
+]
+2019-01-17 11:30:13 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 11:31:12 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\yiisoft\yii2\web\Request.php:494
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-01-17 11:30:12 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][info][application] $_GET = [
+    'DecaissementSearch' => [
+        'date_decaiss_range' => ''
+        'montant' => ''
+        'motif_decaiss' => ''
+    ]
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '54hnq5anncelur9v79l9b0nbq7'
+    '_csrf-backend' => '9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '223'
+    'HTTP_COOKIE' => 'advanced-backend=54hnq5anncelur9v79l9b0nbq7; _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D'
+    'HTTP_RANGE' => 'bytes=0-'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '11804'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547721012.884
+    'REQUEST_TIME' => 1547721012
+]
+2019-01-17 11:31:18 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 11:32:17 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\yiisoft\yii2\web\Request.php:494
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-01-17 11:31:17 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][info][application] $_GET = [
+    'DecaissementSearch' => [
+        'date_decaiss_range' => ''
+        'montant' => ''
+        'motif_decaiss' => ''
+    ]
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '54hnq5anncelur9v79l9b0nbq7'
+    '_csrf-backend' => '9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '223'
+    'HTTP_COOKIE' => 'advanced-backend=54hnq5anncelur9v79l9b0nbq7; _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D'
+    'HTTP_RANGE' => 'bytes=0-'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '11843'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547721077.911
+    'REQUEST_TIME' => 1547721077
+]
+2019-01-17 11:32:23 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 11:33:22 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\yiisoft\yii2\web\Request.php:494
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-01-17 11:32:22 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][info][application] $_GET = [
+    'DecaissementSearch' => [
+        'date_decaiss_range' => ''
+        'montant' => ''
+        'motif_decaiss' => ''
+    ]
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '54hnq5anncelur9v79l9b0nbq7'
+    '_csrf-backend' => '9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '223'
+    'HTTP_COOKIE' => 'advanced-backend=54hnq5anncelur9v79l9b0nbq7; _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D'
+    'HTTP_RANGE' => 'bytes=0-'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '11847'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547721142.938
+    'REQUEST_TIME' => 1547721142
+]
+2019-01-17 11:33:28 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 11:34:27 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\yiisoft\yii2\web\Request.php:494
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-01-17 11:33:28 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][info][application] $_GET = [
+    'DecaissementSearch' => [
+        'date_decaiss_range' => ''
+        'montant' => ''
+        'motif_decaiss' => ''
+    ]
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '54hnq5anncelur9v79l9b0nbq7'
+    '_csrf-backend' => '9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '223'
+    'HTTP_COOKIE' => 'advanced-backend=54hnq5anncelur9v79l9b0nbq7; _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D'
+    'HTTP_RANGE' => 'bytes=0-'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '11850'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547721207.98
+    'REQUEST_TIME' => 1547721207
+]
+2019-01-17 11:34:33 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 11:35:33 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\yiisoft\yii2\web\Request.php:494
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-01-17 11:34:33 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][info][application] $_GET = [
+    'DecaissementSearch' => [
+        'date_decaiss_range' => ''
+        'montant' => ''
+        'motif_decaiss' => ''
+    ]
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '54hnq5anncelur9v79l9b0nbq7'
+    '_csrf-backend' => '9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '223'
+    'HTTP_COOKIE' => 'advanced-backend=54hnq5anncelur9v79l9b0nbq7; _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D'
+    'HTTP_RANGE' => 'bytes=0-'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '11863'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547721273.007
+    'REQUEST_TIME' => 1547721273
+]
+2019-01-17 11:35:38 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 11:36:38 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\yiisoft\yii2\web\Request.php:494
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-01-17 11:35:38 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][info][application] $_GET = [
+    'DecaissementSearch' => [
+        'date_decaiss_range' => ''
+        'montant' => ''
+        'motif_decaiss' => ''
+    ]
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '54hnq5anncelur9v79l9b0nbq7'
+    '_csrf-backend' => '9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '223'
+    'HTTP_COOKIE' => 'advanced-backend=54hnq5anncelur9v79l9b0nbq7; _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D'
+    'HTTP_RANGE' => 'bytes=0-'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '11872'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547721338.034
+    'REQUEST_TIME' => 1547721338
+]
+2019-01-17 11:36:43 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 11:37:43 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\yiisoft\yii2\web\Request.php:494
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-01-17 11:36:43 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][info][application] $_GET = [
+    'DecaissementSearch' => [
+        'date_decaiss_range' => ''
+        'montant' => ''
+        'motif_decaiss' => ''
+    ]
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '54hnq5anncelur9v79l9b0nbq7'
+    '_csrf-backend' => '9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '223'
+    'HTTP_COOKIE' => 'advanced-backend=54hnq5anncelur9v79l9b0nbq7; _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D'
+    'HTTP_RANGE' => 'bytes=0-'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '11882'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547721403.059
+    'REQUEST_TIME' => 1547721403
+]
+2019-01-17 11:37:48 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 11:38:48 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\yiisoft\yii2\web\Request.php:494
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-01-17 11:37:48 [127.0.0.1][1][54hnq5anncelur9v79l9b0nbq7][info][application] $_GET = [
+    'DecaissementSearch' => [
+        'date_decaiss_range' => ''
+        'montant' => ''
+        'motif_decaiss' => ''
+    ]
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '54hnq5anncelur9v79l9b0nbq7'
+    '_csrf-backend' => '9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '223'
+    'HTTP_COOKIE' => 'advanced-backend=54hnq5anncelur9v79l9b0nbq7; _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D, advanced-backend=54hnq5anncelur9v79l9b0nbq7, _csrf-backend=9cb67f8fb69e31ac0020c6fc9ee917527331e35ec3d48ebcc625229ef61c34c7a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wUJrHRpTpBcr-xDk7aZ8qOYhYaX5DdqP%22%3B%7D'
+    'HTTP_RANGE' => 'bytes=0-'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '11889'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?DecaissementSearch%5Bdate_decaiss_range%5D=&DecaissementSearch%5Bmontant%5D=&DecaissementSearch%5Bmotif_decaiss%5D=&r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547721468.086
+    'REQUEST_TIME' => 1547721468
+]
+2019-01-17 20:59:43 [127.0.0.1][1][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\payement\_detailpayement.php:12
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\payement\index.php:42
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\kartik-v\yii2-grid\src\ExpandRowColumn.php:228
+2019-01-17 20:59:20 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'payement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4irm2l3ovdbn45tsvp0hu6q1m6'
+    '_csrf-backend' => '2926e59401feca90a15bd63bae20c415d1ecbc0d1c94eb5d690ab328b4b5f63ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mO2rANYYOKTdlkGWK3fLvDjyjZTQ-Opy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=4irm2l3ovdbn45tsvp0hu6q1m6; _csrf-backend=2926e59401feca90a15bd63bae20c415d1ecbc0d1c94eb5d690ab328b4b5f63ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mO2rANYYOKTdlkGWK3fLvDjyjZTQ-Opy%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '2217'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=payement%2Findex'
+    'REQUEST_URI' => '/index.php?r=payement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547755160.327
+    'REQUEST_TIME' => 1547755160
+]
+2019-01-17 22:37:15 [127.0.0.1][-][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\payement\_detailpayement.php:12
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\payement\index.php:42
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\kartik-v\yii2-grid\src\ExpandRowColumn.php:228
+2019-01-17 22:36:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'payement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4irm2l3ovdbn45tsvp0hu6q1m6'
+    '_csrf-backend' => '2926e59401feca90a15bd63bae20c415d1ecbc0d1c94eb5d690ab328b4b5f63ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mO2rANYYOKTdlkGWK3fLvDjyjZTQ-Opy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=4irm2l3ovdbn45tsvp0hu6q1m6; _csrf-backend=2926e59401feca90a15bd63bae20c415d1ecbc0d1c94eb5d690ab328b4b5f63ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mO2rANYYOKTdlkGWK3fLvDjyjZTQ-Opy%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '5839'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=payement%2Findex'
+    'REQUEST_URI' => '/index.php?r=payement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547761013.607
+    'REQUEST_TIME' => 1547761013
+]
+2019-01-17 22:38:18 [127.0.0.1][1][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 22:38:17 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'npqjvvleqbri34g43ekde4ejd3'
+    '_csrf-backend' => '029f1ca2bc5f12c038b2beb1c7c1d5f9b8ef98369f37ecf09189616e63e428baa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"n1mi9s5LQYmn50Sk34B3H_dgnUvkSoLg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=npqjvvleqbri34g43ekde4ejd3; _csrf-backend=029f1ca2bc5f12c038b2beb1c7c1d5f9b8ef98369f37ecf09189616e63e428baa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22n1mi9s5LQYmn50Sk34B3H_dgnUvkSoLg%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '5958'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547761097.228
+    'REQUEST_TIME' => 1547761097
+]
+2019-01-17 22:38:25 [127.0.0.1][1][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\payement\_detailpayement.php:12
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\payement\index.php:42
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\kartik-v\yii2-grid\src\ExpandRowColumn.php:228
+2019-01-17 22:38:25 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'payement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'npqjvvleqbri34g43ekde4ejd3'
+    '_csrf-backend' => '029f1ca2bc5f12c038b2beb1c7c1d5f9b8ef98369f37ecf09189616e63e428baa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"n1mi9s5LQYmn50Sk34B3H_dgnUvkSoLg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?r=decaissement%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=npqjvvleqbri34g43ekde4ejd3; _csrf-backend=029f1ca2bc5f12c038b2beb1c7c1d5f9b8ef98369f37ecf09189616e63e428baa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22n1mi9s5LQYmn50Sk34B3H_dgnUvkSoLg%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '5959'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=payement%2Findex'
+    'REQUEST_URI' => '/index.php?r=payement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547761104.96
+    'REQUEST_TIME' => 1547761104
+]
+2019-01-17 22:38:31 [127.0.0.1][1][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\create.php:8
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:125
+2019-01-17 22:38:30 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'decaissement/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'npqjvvleqbri34g43ekde4ejd3'
+    '_csrf-backend' => '029f1ca2bc5f12c038b2beb1c7c1d5f9b8ef98369f37ecf09189616e63e428baa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"n1mi9s5LQYmn50Sk34B3H_dgnUvkSoLg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?r=payement%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=npqjvvleqbri34g43ekde4ejd3; _csrf-backend=029f1ca2bc5f12c038b2beb1c7c1d5f9b8ef98369f37ecf09189616e63e428baa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22n1mi9s5LQYmn50Sk34B3H_dgnUvkSoLg%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '5991'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=decaissement%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=decaissement%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547761110.82
+    'REQUEST_TIME' => 1547761110
+]
+2019-01-17 23:08:33 [127.0.0.1][1][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\index.php:15
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:56
+2019-01-17 23:08:28 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'decaissement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'npqjvvleqbri34g43ekde4ejd3'
+    '_csrf-backend' => '029f1ca2bc5f12c038b2beb1c7c1d5f9b8ef98369f37ecf09189616e63e428baa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"n1mi9s5LQYmn50Sk34B3H_dgnUvkSoLg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?r=decaissement%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=npqjvvleqbri34g43ekde4ejd3; _csrf-backend=029f1ca2bc5f12c038b2beb1c7c1d5f9b8ef98369f37ecf09189616e63e428baa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22n1mi9s5LQYmn50Sk34B3H_dgnUvkSoLg%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '8045'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=decaissement%2Findex'
+    'REQUEST_URI' => '/index.php?r=decaissement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547762900.481
+    'REQUEST_TIME' => 1547762900
+]
+2019-01-17 23:08:45 [127.0.0.1][1][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\decaissement\view.php:10
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\controllers\DecaissementController.php:69
+2019-01-17 23:08:45 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'decaissement/view'
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'npqjvvleqbri34g43ekde4ejd3'
+    '_csrf-backend' => '029f1ca2bc5f12c038b2beb1c7c1d5f9b8ef98369f37ecf09189616e63e428baa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"n1mi9s5LQYmn50Sk34B3H_dgnUvkSoLg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?r=decaissement%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=npqjvvleqbri34g43ekde4ejd3; _csrf-backend=029f1ca2bc5f12c038b2beb1c7c1d5f9b8ef98369f37ecf09189616e63e428baa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22n1mi9s5LQYmn50Sk34B3H_dgnUvkSoLg%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '8082'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=decaissement%2Fview&id=2'
+    'REQUEST_URI' => '/index.php?r=decaissement%2Fview&id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1547762925.338
+    'REQUEST_TIME' => 1547762925
+]
+2019-01-22 10:41:04 [127.0.0.1][1][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\payement\_detailpayement.php:12
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\payement\index.php:42
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\kartik-v\yii2-grid\src\ExpandRowColumn.php:228
+2019-01-22 10:40:59 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'payement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6gp0eikrbis5ttkb1r5ca05fo5'
+    '_csrf-backend' => '64609702445f6f42b0148c2806f236e099b1841c7ad0ec25437a0a82c6e962d8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vP8nwzTCecFlbfxcZt9-Cejfz7iQWpt-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6gp0eikrbis5ttkb1r5ca05fo5; _csrf-backend=64609702445f6f42b0148c2806f236e099b1841c7ad0ec25437a0a82c6e962d8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vP8nwzTCecFlbfxcZt9-Cejfz7iQWpt-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '2995'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=payement%2Findex'
+    'REQUEST_URI' => '/index.php?r=payement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1548150059.23
+    'REQUEST_TIME' => 1548150059
+]
+2019-01-22 10:41:36 [127.0.0.1][1][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend/messages/fr/app.php
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\payement\_detailpayement.php:12
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\backend\views\payement\index.php:42
+    in C:\Users\Simone Sika\Desktop\Saltech digital\BARAKT\vendor\kartik-v\yii2-grid\src\ExpandRowColumn.php:228
+2019-01-22 10:41:35 [127.0.0.1][1][-][info][application] $_GET = [
+    'PayementSearch' => [
+        'idpatient0.idassurance0.sigleassurance' => ''
+        'idpatient0.fullName' => ''
+        'refpayement' => ''
+        'montantrecu' => ''
+        'datePayement_range' => '01/09/2018 - 01/01/2019'
+    ]
+    'r' => 'payement/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6gp0eikrbis5ttkb1r5ca05fo5'
+    '_csrf-backend' => '64609702445f6f42b0148c2806f236e099b1841c7ad0ec25437a0a82c6e962d8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vP8nwzTCecFlbfxcZt9-Cejfz7iQWpt-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'username' => 'admin'
+    'profil' => '1'
+    'idUser' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php7/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php7'
+    'PHPRC' => '\\xampp\\php7'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'barakt:8090'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://barakt:8090/index.php?r=payement%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6gp0eikrbis5ttkb1r5ca05fo5; _csrf-backend=64609702445f6f42b0148c2806f236e099b1841c7ad0ec25437a0a82c6e962d8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vP8nwzTCecFlbfxcZt9-Cejfz7iQWpt-%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\ProgramData\\Oracle\\Java\\javapath;\"C:\\Inprise\\vbroker\\bin;\";C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\16.0\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Simone Sika\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Simone Sika\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Borland\\Delphi7\\Projects\\Bpl;C:\\Users\\Simone Sika\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\Simone Sika\\AppData\\Roaming\\ScanApp2;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2018.3\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24 Server at barakt Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24'
+    'SERVER_NAME' => 'barakt'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web'
+    'SERVER_ADMIN' => 'lemondepaysan@yahoo.fr'
+    'SCRIPT_FILENAME' => 'C:/Users/Simone Sika/Desktop/Saltech digital/BARAKT/backend/web/index.php'
+    'REMOTE_PORT' => '3030'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'PayementSearch%5Bidpatient0.idassurance0.sigleassurance%5D=&PayementSearch%5Bidpatient0.fullName%5D=&PayementSearch%5Brefpayement%5D=&PayementSearch%5Bmontantrecu%5D=&PayementSearch%5BdatePayement_range%5D=01%2F09%2F2018+-+01%2F01%2F2019&r=payement%2Findex'
+    'REQUEST_URI' => '/index.php?PayementSearch%5Bidpatient0.idassurance0.sigleassurance%5D=&PayementSearch%5Bidpatient0.fullName%5D=&PayementSearch%5Brefpayement%5D=&PayementSearch%5Bmontantrecu%5D=&PayementSearch%5BdatePayement_range%5D=01%2F09%2F2018+-+01%2F01%2F2019&r=payement%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1548150094.988
+    'REQUEST_TIME' => 1548150094
+]
