@@ -300,6 +300,24 @@ return array (
       '@kartik/dialog' => $vendorDir . '/kartik-v/yii2-dialog/src',
     ),
   ),
+  'wbraganca/yii2-dynamicform' => 
+  array (
+    'name' => 'wbraganca/yii2-dynamicform',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@wbraganca/dynamicform' => $vendorDir . '/wbraganca/yii2-dynamicform/src',
+    ),
+  ),
+  'yii2tech/html2pdf' => 
+  array (
+    'name' => 'yii2tech/html2pdf',
+    'version' => '1.0.5.0',
+    'alias' => 
+    array (
+      '@yii2tech/html2pdf' => $vendorDir . '/yii2tech/html2pdf/src',
+    ),
+  ),
   'kartik-v/yii2-grid' => 
   array (
     'name' => 'kartik-v/yii2-grid',
@@ -343,15 +361,6 @@ return array (
     'alias' => 
     array (
       '@kartik/export' => $vendorDir . '/kartik-v/yii2-export/src',
-    ),
-  ),
-  'yii2tech/html2pdf' => 
-  array (
-    'name' => 'yii2tech/html2pdf',
-    'version' => '1.0.4.0',
-    'alias' => 
-    array (
-      '@yii2tech/html2pdf' => $vendorDir . '/yii2tech/html2pdf/src',
     ),
   ),
 );

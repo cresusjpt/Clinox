@@ -1047,7 +1047,88 @@ if (!Yii::$app->user->isGuest) {
 
 //**********************************************  End menu delete decaissement  ****************************************************************************************
 
+//**********************************************  Begin menu gestion interventions  ****************************************************************************************
 
+
+    $menugesinter = array();
+
+    $sql = Yii::$app->db->createCommand("select idprof from profil where gesinter = 1 ");
+    $list = $sql->query();
+    foreach ($list as $ligne) {
+        $menugesinter[] = $ligne['idprof'];
+    }
+    $admenugesinter = in_array($profiluser, $menugesinter);
+
+    $menu['admenugesinter'] = $admenugesinter;
+
+
+//**********************************************  End menu gestion analyses  ****************************************************************************************
+
+
+
+//**********************************************  Begin menu create interventions  ****************************************************************************************
+
+
+    $menucreateinter = array();
+
+    $sql = Yii::$app->db->createCommand("select idprof from profil where createinter = 1 ");
+    $list = $sql->query();
+    foreach ($list as $ligne) {
+        $menucreateinter[] = $ligne['idprof'];
+    }
+    $admenucreateinter = in_array($profiluser, $menucreateinter);
+
+    $menu['admenucreateinter'] = $admenucreateinter;
+
+
+//**********************************************  End menu create intervention  ****************************************************************************************
+//**********************************************  Begin menu read interveniton  ****************************************************************************************
+
+
+    $menureadinter = array();
+
+    $sql = Yii::$app->db->createCommand("select idprof from profil where readinter = 1 ");
+    $list = $sql->query();
+    foreach ($list as $ligne) {
+        $menureadinter[] = $ligne['idprof'];
+    }
+    $admenureadinter = in_array($profiluser, $menureadinter);
+
+    $menu['admenureadinter'] = $admenureaddecaiss;
+
+
+//**********************************************  End menu read intervention  ****************************************************************************************
+//**********************************************  Begin menu update intervention  ****************************************************************************************
+
+
+    $menuupdateinter = array();
+
+    $sql = Yii::$app->db->createCommand("select idprof from profil where updateinter = 1 ");
+    $list = $sql->query();
+    foreach ($list as $ligne) {
+        $menuupdateinter[] = $ligne['idprof'];
+    }
+    $admenuupdateinter = in_array($profiluser, $menuupdateinter);
+
+    $menu['admenuupdateinter'] = $admenuupdateinter;
+
+
+//**********************************************  End menu update intervention  ****************************************************************************************
+//**********************************************  Begin menu delete intervention  ****************************************************************************************
+
+    $menudeleteinter = array();
+
+    $sql = Yii::$app->db->createCommand("select idprof from profil where deleteinter = 1 ");
+    $list = $sql->query();
+    foreach ($list as $ligne) {
+        $menudeletedecaiss[] = $ligne['idprof'];
+    }
+    $admenudeleteinter = in_array($profiluser, $menudeleteinter);
+
+    $menu['admenudeletedecaiss'] = $admenudeletedecaiss;
+
+
+//**********************************************  End menu delete intervention  ****************************************************************************************
 
 
 

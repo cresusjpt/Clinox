@@ -1,4 +1,10 @@
 montant variable selon la prestation
-g�rer d�caissement par p�riode (impression)
-afficher les d�tails pour le decaissement
+g�rer d�caissement par p�riode (impression)
+afficher les d�tails pour le decaissement
 Situation du decaissement par jour.
+
+
+Antécedents obstétrique dans antécedents patient n'existait pas.
+Quels sont les valeurs possibles pour parité et avortements (le nombre de fois ou oui/non
+
+Examen obstétrical : analyses et traitements représentent t'ils des analyses médicale ? De même que traitements (est ce les soins ?)

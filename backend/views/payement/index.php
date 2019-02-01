@@ -112,25 +112,6 @@ $this->params['breadcrumbs'][] = $this->title;
         ]);
         ?>
     </div>
-
-    <div class="box-footer hidden-print">
-        <div class="container clearfix">
-            <!--Top Left-->
-            <div class="pull-left">
-                <span><?= Html::label('TOTAL DES ENTREES : ' . Yii::$app->formatter->asDecimal($totalEntree) . ' FCFA') ?></span>
-            </div>
-        </div>
-    </div>
-
-    <div class="box-footer hidden-print">
-        <div class="container clearfix">
-            <!--Top Left-->
-            <div class="pull-left">
-                <span><?= Html::label('TOTAL DE LA CAISSE : ' . Yii::$app->formatter->asDecimal($totalCaisse) . ' FCFA') ?></span>
-            </div>
-        </div>
-    </div>
-
 </div>
 
 <div class="row" style="display: none" id="data_export">
@@ -198,6 +179,24 @@ $this->params['breadcrumbs'][] = $this->title;
                 ?>
                 </tbody>
             </table>
+        </div>
+    </div>
+</div>
+
+<div class="box-footer">
+    <div class="container clearfix">
+        <!--Top Left-->
+        <div class="pull-left">
+            <span><?= Html::label('TOTAL DES ENTREES : ' . Yii::$app->formatter->asInteger($totalEntree) . ' FCFA') ?></span>
+        </div>
+    </div>
+</div>
+
+<div class="box-footer hidden-print">
+    <div class="container clearfix">
+        <!--Top Left-->
+        <div class="pull-left">
+            <span><?= Html::label('TOTAL DE LA CAISSE : ' . Yii::$app->formatter->asInteger($totalCaisse) . ' FCFA') ?></span>
         </div>
     </div>
 </div>

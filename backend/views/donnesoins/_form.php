@@ -68,8 +68,7 @@ use dosamigos\datepicker\DatePicker;
                         <td>
                             <select class="form-control m-b" id="soins" name="soins[]">
                                 <?php foreach($soins as $soin) {  ?>
-                                    <option value="<?= $soin['idsoin']  ?>" > <?= $soin['libsoin'].' = '.$soin['coutsoin']  ?>
-                                    </option>
+                                    <option value="<?= $soin['idsoin']  ?>" > <?= $soin['libsoin'].' = '.$soin['coutsoin']  ?></option>
                                 <?php } ?>
                             </select>
                             <!--?= $form->field($model, 'idSoins')->widget(Select2::classname(), [
@@ -139,9 +138,6 @@ use dosamigos\datepicker\DatePicker;
                     <?php }
                 }
                 ?>
-
-
-
 
                 </tbody>
             </table>

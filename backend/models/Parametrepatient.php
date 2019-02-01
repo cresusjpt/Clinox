@@ -62,7 +62,7 @@ class Parametrepatient extends \yii\db\ActiveRecord
         return [
             'idparametre' => 'Parametre N°',
             'idpatient' => 'Patient',
-            'tention' => 'Tention en mmHg',
+            'tention' => 'Tension en mmHg',
             'temperature' => 'Temperature en °C',
             'poids' => 'Poids en kg',
             'nbreenfant' => 'Nombre d\'enfants',

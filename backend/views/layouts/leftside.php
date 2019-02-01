@@ -177,6 +177,14 @@ AppAsset::register($this);
                     ];
                 }
 
+                if ($menu['admenucreateexamed']) {
+                    $sousmenu[] = [
+                        'label' => 'Examen Obstétrical',
+                        'icon' => 'fa fa-binoculars',
+                        'url' => '?r=examenobstetric%2Fcreate',
+                        'active' => $this->context->route == 'examenobstetric/create'
+                    ];
+                }
 
                 $items[] = [
                     'label' => 'CONSULTATION',
@@ -397,6 +405,69 @@ AppAsset::register($this);
             /************************************************** End Menu Gestion des Examens Médicaux  **********************************************************/
 
 
+
+            /************************************************** Begin Menu Gestion des Interventions Médicaux  **********************************************************/
+
+            if ($menu['admenugesinter']) {
+
+                if ($menu['admenucreateinter']) {
+                    $sousmenu[] = [
+                        'label' => 'Enrégistrer une intervention',
+                        'icon' => 'fa fa-codepen',
+                        'url' => '?r=intervention%2Fcreate',
+                        'active' => $this->context->route == 'intervention/create'
+                    ];
+                }
+
+                if ($menu['admenureadinter']) {
+                    $sousmenu[] = [
+                        'label' => 'Liste des interventions',
+                        'icon' => 'fa fa-list',
+                        'url' => '?r=intervention%2Findex',
+                        'active' => $this->context->route == 'intervention/index'
+                    ];
+                }
+                /*  if ($menu['admenucreateana']) {
+                      $sousmenu[] = [
+                          'label' => 'Enrégistrer des résultats',
+                          'icon' => 'fa fa-codepen',
+                          'url' => '?r=effectueranalyse%2Fcreate',
+                          'active' => $this->context->route == 'effectueranalyse/create'
+                      ];
+                  }*/
+
+                /* if ($menu['admenureadana']) {
+                     $sousmenu[] = [
+                         'label' => 'Liste des effectueranalyses',
+                         'icon' => 'fa fa-list',
+                         'url' => '?r=effectueranalyse%2Findex',
+                         'active' => $this->context->route == 'effectueranalyse/index'
+                     ];
+     //                $sousmenu[] = [
+     //                    'label' => 'Liste avancée',
+     //                    'icon' => 'fa fa-list-alt',
+     //                    'url' => '?r=effectueranalyse%2Flisteavance',
+     //                    'active' => $this->context->route == 'effectueranalyse/listeavance'
+     //                ];
+                 }*/
+
+
+                $items[] = [
+                    'label' => 'INTERVENTIONS',
+                    'icon' => 'glyphicon glyphicon-pawn',
+                    'url' => '#',
+                    'items' => $sousmenu,
+
+                ];
+            }
+
+            $sousmenu = null;
+            /************************************************** End Menu Gestion des Interventions Médicaux  **********************************************************/
+
+
+
+
+
             /************************************************** Begin Menu Gestion des Analyses Médicaux  **********************************************************/
 
             if ($menu['admenugesana']) {
@@ -520,7 +591,7 @@ AppAsset::register($this);
 //                    ];
                 }
 
-                if ($menu['admenucreatedecaiss']){
+                if ($menu['admenucreatedecaiss']) {
                     $sousmenu[] = [
                         'label' => 'Enrégistrer un décaissement',
                         'icon' => 'fa fa-cube',
@@ -529,7 +600,7 @@ AppAsset::register($this);
                     ];
                 }
 
-                if ($menu['admenureaddecaiss']){
+                if ($menu['admenureaddecaiss']) {
                     $sousmenu[] = [
                         'label' => 'Liste des décaissements',
                         'icon' => 'fa fa-list',

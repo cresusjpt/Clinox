@@ -22,13 +22,16 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
     <?php
     $gridColumns = [
-        ['class' => 'yii\grid\SerialColumn'],
+        [
+            'class' => 'yii\grid\SerialColumn',
+        ],
 
         //'id_decaiss',
         //'reference_decaiss',
         [
             'attribute' => 'date_decaiss',
             'format' => 'raw',
+            'footer' => 'TOTAL DES SORTIES :',
             'value' => function ($model) {
                 if (extension_loaded('intl')) {
                     return Yii::t('app', Yii::$app->formatter->asDate($model->date_decaiss), $model->date_decaiss);
@@ -53,8 +56,18 @@ $this->params['breadcrumbs'][] = $this->title;
                 ]
             ]),
         ],
-        'montant:integer',
-        'motif_decaiss:ntext',
+        [
+            'attribute' => 'montant',
+            'format' => 'integer',
+            'footer' => Yii::$app->formatter->asDecimal($totalDecaissement) . ' FCFA',
+        ],
+        [
+            'attribute' => 'motif_decaiss',
+            'format' => 'ntext',
+            'value' => function ($model) {
+                return $model->motif_decaiss;
+            },
+        ],
         //'ressource',
 
         ['class' => 'yii\grid\ActionColumn'],
@@ -78,6 +91,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'fontAwesome' => true,
             ],
             'dataProvider' => $dataProvider,
+            'showFooter' => true,
             'filterModel' => $searchModel,
             'columns' => $gridColumns,
         ]); ?>
@@ -85,20 +99,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php Pjax::end(); ?>
 
-    <div class="box-footer hidden-print">
-        <div class="container clearfix">
-            <!--Top Left-->
-            <div class="pull-left">
-                <span><?= Html::label('TOTAL DES SORTIES : ' . Yii::$app->formatter->asDecimal($totalDecaissement) . ' FCFA') ?></span>
-            </div>
-        </div>
-    </div>
-
     <div class="box-footer">
         <div class="container clearfix">
             <!--Top Left-->
             <div class="pull-left">
-                <span><?= Html::label('TOTAL DE LA CAISSE : ' . Yii::$app->formatter->asDecimal($totalCaisse) . ' FCFA') ?></span>
+                <span><?= Html::label('TOTAL DE LA CAISSE : ' . Yii::$app->formatter->asInteger($totalCaisse) . ' FCFA') ?></span>
             </div>
         </div>
     </div>

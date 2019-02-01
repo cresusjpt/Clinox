@@ -2,7 +2,7 @@
     <div class="pull-right hidden-xs">
         <b> Version</b> 1.0.0
     </div>
-    <strong>OLFA PLEXUS TECHNOLOGIES &copy; 2017 <a href="http://olfaplexus.tech/">olfaplexus</a>.</strong> All rights
+    <strong>OLFA PLEXUS TECHNOLOGIES &copy; 2017<a href="http://olfaplexus.tech/" class="hidden-print">olfaplexus</a>.</strong> All rights
     reserved.
     <p class="pull-right">&copy; LA BARAKAT <?= date('Y') . ' ' ?> &nbsp </p>
 </footer>
