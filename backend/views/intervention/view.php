@@ -172,7 +172,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </tr>
 
             <tr>
-                <td class="center">PHRAMACIES</td>
+                <td class="center">PHARMACIES</td>
                 <td class="center"></td>
                 <td class="center"></td>
                 <td class="center"></td>
